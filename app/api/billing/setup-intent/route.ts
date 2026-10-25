@@ -36,7 +36,7 @@ export const POST = withRateLimitedAuth(
 			// Creaet SetupIntent for payment method collection
 			const setupIntent = await stripe.setupIntents.create({
 				customer_account: customerId as string,
-				payment_method_types: ['card'],
+				allowed_payment_method_types: ['card'],
 				usage: 'off_session',
 				metadata: {
 					user_id: user.id,
