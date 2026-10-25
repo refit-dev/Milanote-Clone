@@ -7,7 +7,7 @@ import { withRateLimitedAuth } from "@/lib/rate-limit/with-rate-limit";
 import { RATE_LIMITS } from "@/lib/rate-limit/configs";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-	apiVersion: '2025-12-15.clover',
+	apiVersion: '2026-09-30.endive',
 });
 
 const ALLOWED_PRICE_IDS = [

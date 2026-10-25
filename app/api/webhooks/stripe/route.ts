@@ -10,7 +10,7 @@ const adminDB = init({
 });
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-	apiVersion: '2025-12-15.clover',
+	apiVersion: '2026-09-30.endive',
 });
 
 const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET!;
